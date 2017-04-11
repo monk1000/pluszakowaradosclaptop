@@ -1,0 +1,666 @@
+body {
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+section {
+	margin: 100px 0;
+}
+
+h1 {
+	text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: inherit;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 32px;
+    margin: 20px 0 30px;
+    font-weight: 100;}
+
+h3, h4, h5 {
+	font-family: 'Raleway', sans-serif;
+}
+
+h6 {
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	color: inherit;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 16px;
+}
+
+p {
+	color: inherit;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+header {
+	position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 10;
+    transition: 1s;
+    box-shadow: -2px -1px 6px 0px #795548;
+}
+
+.fixed {
+	position: fixed;
+	background-color: rgb(151, 162, 180);
+	height: 60px;
+}
+
+.navigation{
+	text-align: right;
+}
+
+.caret {
+	text-shadow: 1px 1px 1px #212020;
+}
+
+.description {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+/*logo*/
+.logo {
+	width: 300px;
+	float: left;
+	text-align: left;
+	margin-left: 50px;
+}
+
+.logo .fa {
+	margin: 0 20px;
+	line-height: 60px;
+	color: white;
+}
+
+.logo .fa:hover {
+	color: yellow;
+	text-shadow: 1px 1px 1px grey;
+	transition: .3s;
+}
+
+/*navigation*/
+
+.nav {
+	position: relative;
+	float: right;
+	margin-right: 50px;
+	font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.nav li a {
+	padding: 0 30px;
+	border-radius: 0;
+	color: white;
+	line-height: 60px;
+}
+
+.nav li a:hover {
+	height: 45px;
+	background-color: transparent;
+	border-bottom: 1px dashed white;
+	transition: .3s;
+	color: yellow;
+	text-shadow: 1px 1px 1px grey;
+}
+
+.nav li a:focus {
+	height: 45px;
+	background: none;
+	border-bottom: 1px solid white;
+	color: yellow;
+	text-shadow: 1px 1px 1px grey;
+}
+
+.nav .dropdown-menu {
+	width: 220px;
+    position: absolute;
+    top: 100%;
+    left: -12px;
+    z-index: 1000;
+    min-width: 150px;
+    padding: 5px 0;
+    margin: 6px 0;
+    font-size: 13px;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 3px;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+	height: 45px;
+	background: none;
+	border-bottom: 1px solid white;
+	color: yellow;
+}
+
+.nav .dropdown-menu li a {
+    color: #3c3c3c;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    line-height: 35px;
+    text-align: center;
+}
+
+.nav .dropdown-menu li > a:hover,.nav .dropdown-menu li > a:focus {
+	height: inherit;
+    background-color: rgba(155, 207, 210, 0.25);
+    border: none;
+    transition: .3s;
+    text-shadow: none;
+}
+
+/*jumbotron*/
+.jumbotron {
+	background-image: url(../images/bg_plusz.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.mainslogan {
+    display: block;
+    top: 270px;
+    left: 150px;
+    position: absolute;
+    width: 555px;
+    height: 400px;
+}
+
+.mainslogan .name {
+	width: 100%;
+	font-family: 'Bigelow Rules', sans-serif;
+	height: 175px;
+	text-align: center;
+	font-size: 120px;
+    color: yellow;
+    padding-top: 15px;
+    text-shadow: 2px 2px 0px grey;
+}
+
+.mainslogan .division {
+	background-image: url('../images/division.png');
+	background-position: center;
+	background-size: cover;
+	height: 50px;
+}
+
+.mainslogan .surname p {
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	height: 25px;
+	text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 24px;
+    color: mintcream;
+    padding-top: 28px;
+    text-shadow: 1px 1px 1px grey
+}
+
+/*scroll*/
+
+.scroll a:before {
+    display: block;
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: -2px;
+    left: -12px;
+    background: rgba(185, 66, 66, 0.39);
+    background-color: transparent;
+    border: 1px dashed white;
+    border-radius: 50%;
+}
+
+.scroll a {
+	color: white;
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	animation: scrollBtn .8s infinite;
+}
+
+.scroll a:hover {
+	color: yellow;
+	text-shadow: 1px 1px 1px grey;
+}
+
+
+@keyframes scrollBtn {
+	0% {
+		bottom: 50px;
+	}
+	50%{
+		bottom: 40px;
+	}
+	100%{
+		bottom: 50px;
+	}
+}
+
+/*Kolumny*/
+
+.columns {
+	margin-top: 0;
+}
+
+.columns .col-lg-6 {
+	padding: 0;
+}
+
+.columns .row {
+	width: 100%;
+    margin: 0;
+}
+
+.columns .leftcolumn, .rightcolumn {
+	height: 667px;
+	background-color: rgba(33, 150, 243, 0.03);
+}
+
+.columns .picture {
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 667px;
+}
+
+.columns .pic1{
+	background-image: url('../images/sandbox.jpg');
+	background-position: right;
+}
+.columns .pic2{
+	background-image: url('../images/drawing.jpg');
+	background-position: left;
+}
+.columns .pic3{
+	background-image: url('../images/origami.jpg');
+	background-position: right;
+}
+
+.columns .quote, .vision, .mission {
+    width: 50%;
+    margin: 235px auto;
+}
+
+.columns .quote p, .vision p, .mission p {
+	text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: inherit;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.columns span{
+	font-weight: bold;
+}
+
+.columns .quote p.name {
+	text-align: right;
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: inherit;
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+/*logo ue*/
+.container.logoue {
+	text-align: center;
+	width: 100%;
+	margin: 40px auto;
+}
+
+.logoue1, .logoue2, .logoue3 {
+	display: inline-block;
+	width: 350px;
+	height: 80px;
+	margin: 0 15px;
+	background-position: left;
+	background-size: cover;
+}
+
+.logoue1 {
+	background-image: url('../images/kllogo.png');
+}
+
+.logoue2 {
+	background-image: url('../images/wuplogo.png');
+}
+.logoue3 {
+	background-image: url('../images/uelogo.png');
+}
+
+.ueinfo h4{
+	margin-top: 35px;
+	color: inherit;
+}
+
+/*infobox'y*/
+
+.collapse{
+	display: none;
+}
+
+.collapse.in {
+	display: inline-block;
+}
+
+.plany{
+	display: inline-block;
+	margin: 0 auto;
+}
+.plans {
+	margin-top: 20px;
+}
+
+.plandnia {
+	margin: 20px;
+}
+
+.plandnia p{
+	text-align: center;
+	margin: 10px 0;
+}
+
+.description {
+	margin-bottom: 20px;
+	}
+
+.infobox {
+	background-color: rgba(33, 150, 243, 0.03);
+	height: 650px;
+}
+
+.dayplan-btns {
+	text-align: center;
+	padding-top: 25px;
+}
+
+.dayplan-btns p{
+	padding: 0px;
+}
+
+.btn {
+	font-size: 14px;
+	width: 100%;
+	outline: none;
+}
+
+.btn-lg {
+	padding: 0;
+	outline: none;
+}
+
+.btn-primary {
+	color: #373737;
+    background-color: #fff;
+    border-color: #373737;
+   	font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    transition: .4s;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+.btn-primary:active:focus, .btn-primary:active:hover {
+	color: #fff;
+    background-color: #96858F;
+    border-color: #fff;
+    outline: none;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+	color: #fff;
+    background-color: #96858F;
+    border-color: #fff;
+    outline: none;
+}
+
+.infobox h4{
+    color: inherit;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 20px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.table {
+	font-size: 13px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.table th {
+	width: 105px;
+	text-align: center;
+}
+
+table .hour{
+	text-align: center;
+}
+
+/*zajecia dodatkowe*/
+
+.zajecia {
+	text-align: center;
+    padding: 30px;
+}
+
+.zajeciaicons {
+    display: block;
+    margin: 33px auto;
+}
+
+.run, .swim, .eng, .zumba {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-position: center;
+	background-size: 35px 35px;
+	background-repeat: no-repeat;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.icontitle {
+	display: inline-block;
+	text-transform: lowercase;
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.swim {
+	background-image: url('../images/swimicon.png');
+	background-color: #9aceec;
+}
+
+.run {
+	background-image: url('../images/run.png');
+	background-color: rgba(239, 126, 10, 0.76);
+}
+.eng {
+	background-image: url('../images/engicon.png');
+	background-color: #9aec9d;
+}
+.zumba {
+	background-image: url('../images/zumbaicon.png');
+	background-color: rgba(204, 83, 234, 0.58);
+}
+
+/*Kadra*/
+.kadra{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.ih-item.circle {
+	display: inline-block;
+	margin: 0 30px;
+	cursor: default;
+}
+
+.ih-item.circle.effect1 .spinner {
+    width: 230px;
+    height: 230px;
+    border: 4px solid #dad3f5;
+    border-right-color: #a3d0e5;
+    border-bottom-color: #CDDC39;
+    border-radius: 50%;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+.ih-item.circle.effect1 .info h3 {
+    padding: 80px 0 0 0;
+    height: 115px;
+}
+
+/*formularz kontaktowy*/
+
+form {
+	display: block;
+	margin: 0 auto;
+	width: 70%;
+
+}
+
+
+/*footer*/
+
+footer {
+	height: 315px;
+	background-color: rgb(155, 162, 178);
+	margin: 50px 0 0 0;
+}
+
+.container.foot{
+	padding: 35px 15px 15px 15px;
+}
+
+footer h4 {
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	font-weight: bolder;
+	text-transform: uppercase;
+	margin-bottom: 18px;
+	color: yellow;
+	text-shadow: 2px 2px 0px grey;
+	letter-spacing: 1px;
+}
+
+.adres, .links, .map {
+	height: 260px;
+}
+
+.adres {
+	border-right: 2px white dashed;
+}
+
+.adresleft {
+	padding-left: 5px;
+	padding-right: 3px;
+	text-align: right;
+}
+
+.adresleft .row, .adresright .row {
+	height: 60px;
+}
+
+.adresleft, .adresright, h4 {
+	color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.social {
+	text-align: left;
+	padding-left: 50px;
+}
+
+.smicon {
+	display: inline-block;
+	height: inherit;
+	width: 50px;
+}
+
+.smicon a {
+	color: white;
+	text-align: center;
+}
+
+.smicon a:hover {
+	color: yellow;
+	text-shadow: 1px 1px 1px grey;
+	transition: .3s;
+}
+
+.links {
+	border-right: 2px white dashed;
+}
+
+.links ul {
+
+	list-style-type: none;
+	padding-left: 15px;
+}	
+
+.links ul li {
+	padding-bottom: 8px;
+}
+
+.links ul li a {
+	color: white;
+	letter-spacing: 1px;
+	font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.links ul li a:hover {
+	text-decoration: none;
+	color: yellow;
+	text-shadow: 1px 1px 1px grey;
+	transition: .3s;
+}
+
+@media screen and (min-width: 768px) {
+
+.jumbotron {
+    padding-top: 0px;
+    padding-bottom: 48px;
+}
+
+
+
+
+
