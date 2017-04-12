@@ -67,7 +67,7 @@ header {
 }
 
 .description {
-	margin-bottom: 20px;
+	margin: 20px 0;
 	text-align: center;
 }
 
@@ -395,12 +395,9 @@ header {
 }
 
 .dayplan-btns {
+	display: inline-block;
 	text-align: center;
 	padding-top: 25px;
-}
-
-.dayplan-btns p{
-	padding: 0px;
 }
 
 .btn {
@@ -473,8 +470,8 @@ table .hour{
 }
 
 .zajeciaicons {
-    display: block;
-    margin: 33px auto;
+    display: inline-block;
+    margin: auto 33px;
 }
 
 .run, .swim, .eng, .zumba {
@@ -543,15 +540,63 @@ table .hour{
     height: 115px;
 }
 
+
+/*Cennik i zasady pobytu*/
+
+
+.title h5{
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 19px;
+}
+
+.title p{
+	font-size: 12px;
+	text-align: center;
+}
+
+.time{
+	text-align: center;
+	padding-left: 20px;
+}
+
+.price{
+	padding-left: 20px;
+}
+
+.borderleft {
+	border-right: 2px solid #97a2b4;
+}
+
 /*formularz kontaktowy*/
 
+.contactform {
+	margin: 0 auto;
+}
+
 form {
-	display: block;
 	margin: 0 auto;
 	width: 70%;
 
 }
 
+.form-group label{
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: inherit;
+}
+
+.form-group input, .form-group textarea{
+	border-radius: 0;
+	border: 2px solid #97a2b4;
+}
+
+.send{
+	width: 250px;
+}
 
 /*footer*/
 

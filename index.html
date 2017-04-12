@@ -22,19 +22,18 @@
 				<div class="navigation">
 					<ul id="nav" class="nav nav-pills">
 						<li role="presentation" class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Informacje<span class="caret"></span>
+							<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Menu<span class="caret"></span>
 							</a>
 								<ul class="dropdown-menu">
 									<li><a data-scroll href="#misja">Misja i Wizja</a></li>
 									<li><a data-scroll href="#dayplan">Plan dnia</a></li>
-									<li><a data-scroll href="#">Opłaty</a></li>
+									<li><a data-scroll href="#oplaty">Opłaty</a></li>
 									<li><a data-scroll href="#kadra">Kadra</a></li>
-									<li><a data-scroll href="#">Masz pytanie?</a></li>
+									<li><a data-scroll href="#formularz">Masz pytanie?</a></li>
 									<li><a data-scroll href="#">Pliki do pobrania</a></li>
 								</ul>
 						</li>
 						<li><a data-scroll href="#projektue">Projekt UE</a></li>
-						<li><a href="#">Dokumenty</a></li>
 					</ul>
 				</div>
 		</header>
@@ -58,11 +57,11 @@
 		</section>
 
 		<section class="columns">
-			<div id="motto" class="row">
+			<div class="row">
 				<div class="col-lg-6 leftcolumn">
 					<div class="picture pic1"></div>
 				</div>
-				<div class="col-lg-6 rightcolumn">
+				<div class="col-lg-6 rightcolumn" id="motto">
 					<div class="quote">
 						<h1>Nasze <span>Motto</span>:</h1>
 						<p>„Mogę uczyć się wszystkiego, co mnie zaciekawi</p>
@@ -71,8 +70,8 @@
 					</div>	
 				</div>
 			</div>
-			<div id="misja" class="row">
-				<div class="col-lg-6 leftcolumn">
+			<div class="row">
+				<div class="col-lg-6 leftcolumn" id="misja">
 					<div class="mission">
 						<h1><span>Misja</span> przedszkola:</h1>
 						<p>Naszym największym dobrem jest dobro dziecka, przygotowujemy je do odnoszenia sukcesów i radzenia sobie z trudnościami.</p>
@@ -105,27 +104,18 @@
 						<p>Przedszkole jest czynne 12 godzin dziennie i 12 miesięcy w roku w godzinach od 6:00 do 18:00.</p>
 						<p>Zajęcia dydaktyczne są prowadzone w godzinach 9.00-14.00.</p>
 					</div>
-					<div class="dayplan-btns">
-						<div class="col-lg-5">
-							<button class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#starszaki"><p>Grupa Starsza</p>		
-							</button>
-						</div>
-
-						<div class="col-lg-2">
-							<button class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#zajeciadodatkowe"><p>Zajęcia</p><p>Dodatkowe</p>		
-							</button>
-						</div>
-				
-						<div class="col-lg-5">
-							<button class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#maluchy"><p>Grupa Młodsza</p>
-							</button>
-						</div>
+					<div class="col-lg-6 dayplan-btns">
+						<button class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#starszaki"><p>Grupa Starsza</p></button>
+					</div>							
+					<div class="col-lg-6 dayplan-btns">
+						<button class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#maluchy"><p>Grupa Młodsza</p></button>
 					</div>
 				</div>
+			</div>
 		</section>
 		<section class="plans">
 			<div class="container">
-				<div class="plany col-lg-5">
+				<div class="plany col-lg-6">
 					<div id="starszaki" class="collapse">
 						<div class="infobox">
 							<table class="table">
@@ -202,32 +192,7 @@
 					</div>						
 				</div>
 
-				<div class="plany col-lg-2">			
-					<div id="zajeciadodatkowe" class="collapse">
-						<div class="infobox">
-							<div class="zajecia">
-								<div class="zajeciaicons">
-									<div class="swim"></div>
-									<div><h5 class="icontitle">Basen</h5></div>
-								</div>
-								<div class="zajeciaicons">	
-									<div class="run"></div>
-									<div><h5 class="icontitle">Zajęcia sportowe</h5></div>
-								</div>
-								<div class="zajeciaicons">
-									<div class="eng"></div>
-									<div><h5 class="icontitle">Język angielski</h5></div>
-								</div>	
-								<div class="zajeciaicons">
-									<div class="zumba"></div>
-									<div><h5 class="icontitle">Zumba</h5></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="plany col-lg-5">			
+				<div class="plany col-lg-6">			
 					<div id="maluchy" class="collapse">
 						<div class="infobox">
 							<table class="table">
@@ -361,7 +326,7 @@
       						</div>
           				</a>
       				</div>
-      				<div class="ih-item circle effect1">
+      			<!--	<div class="ih-item circle effect1">
 						<a href="#">
         					<div class="spinner"></div>
         						<div class="img">
@@ -374,10 +339,124 @@
           						</div>
       						</div>
           				</a>
-      				</div>
+      				</div> -->
 				</div>
 			</div>
 		</section>
+
+		<section>
+			<div class="container">
+				<div id="oplaty" class="oplaty">
+					<h1>Opłaty</h1>
+					<div class="description">
+						<p>Przedszkole oferuje dwa typy czesnego. Pierwszym z nich jest tradycyjny, miesięczny abonament. Drugi to propozycja dla rodziców którzy chcieliby pozostawić swoje dziecko pod naszą opieką w nieregularnych godzinach w miesiącu. </p>
+						<p>Niezależnie od wyboru, czesne zawiera: opłatę za pobyt dziecka w przedszkolu wraz z wyżywieniem, indywidualne środki higieny, materiały edukacyjne i pomoce oraz zajęcia dydaktyczne</p>
+					</div>
+				</div>
+				<div id="zajeciadodatkowe" class="plany col-lg-12">			
+					<div class="zajecia">
+						<div class="zajeciaicons">
+							<div class="swim"></div>
+							<div><h5 class="icontitle">Basen</h5></div>
+						</div>
+						<div class="zajeciaicons">	
+							<div class="run"></div>
+							<div><h5 class="icontitle">Zajęcia sportowe</h5></div>
+						</div>
+						<div class="zajeciaicons">
+							<div class="eng"></div>
+							<div><h5 class="icontitle">Język angielski</h5></div>
+						</div>	
+						<div class="zajeciaicons">
+							<div class="zumba"></div>
+							<div><h5 class="icontitle">Zumba</h5></div>
+						</div>
+					</div>									
+				</div>				
+				<div class="cennik">
+					<div class="row">
+						<div class="col-lg-6 borderleft">
+							<div class="title">
+								<h5>Abonament klasyczny (miesięczny)</h5>
+							</div>							
+						</div>
+						<div class="col-lg-6">
+							<div class="title">
+								<h5>Karnety</h5>
+								<p>Ważne 3 miesiące od daty zakupu.</p>
+							</div>							
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="time">
+							<h5>Abonament 5 godzin (ze śniadaniem)</h5>
+							</div>							
+						</div>
+						<div class="col-lg-2 borderleft">
+							<div class="price">
+							<h5>300 zł</h5>
+							</div>
+						</div>					
+						<div class="col-lg-4">
+							<div class="time">
+							<h5>Karnet 50 godzin / miesiąc</h5>
+							</div>							
+						</div>
+						<div class="col-lg-2">
+							<div class="price">
+							<h5>420 zł</h5>
+							</div>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="time">
+								<h5>Abonament 8 godzin (z wyżywieniem)</h5>
+							</div>							
+						</div>
+						<div class="col-lg-2 borderleft">
+							<div class="price">
+								<h5>390 zł</h5>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="time">
+							<h5>Karnet 20 godzin / miesiąc</h5>
+							</div>							
+						</div>
+						<div class="col-lg-2">
+							<div class="price">
+							<h5>260 zł</h5>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="time">
+								<h5>Abonament powyżej 8 godzin (z wyżywieniem)</h5>
+							</div>							
+						</div>
+						<div class="col-lg-2 borderleft">
+							<div class="price">
+								<h5>450 zł</h5>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="time">
+								<h5>1 godzina</h5>
+							</div>							
+						</div>
+						<div class="col-lg-2">
+							<div class="price">
+								<h5>13 zł</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</section>
+
 
 		<section>
 			<div class="container">
@@ -387,23 +466,31 @@
 						<p>Jeśli maja Państwo jakiekolwiek pomysły, wątpiwości bądź pytania, prosimy serdecznie o nieskrępowany kontakt.</p>
 						<p>Na każde zapytanie postaramy się, wyczerpująco, odpowiedzieć w jak najkrótszym czasie.</p>
 					</div>
-					<div id="form-messages"></div>
-					
-					<form id="ajax-form" method="post" action="php/mailer.php" class="form">
-						<div class="form-group col-lg-6">
-    						<label for="name">Imię i Nazwisko</label>
-   							<input type="text" class="form-control" id="name" name="name" placeholder="Imię i Nazwisko">
-  						</div>
-  						<div class="form-group col-lg-6">
-    						<label for="adresemail">Adres e-mail:</label>
-   							<input type="email" class="form-control" id="adresemail" placeholder="Wpisz swój adres e-mail..." required>
-  						</div>
-  						<div class="form-group col-lg-6">
-    						<label for="text">Twoja wiadomość:</label>
-   							<textarea type="text" rows="3" class="form-control" id="message" placeholder="Treść Twojej wiadomości..." required></textarea>
-  						</div>
-						<button type="submit" class="btn btn-primary btn-lg">Wyslij wiadomość</button>
-					</form>
+					<!-- <div id="form-messages"></div>   -->
+					<div class="center">
+						<form id="ajax-form" method="post" action="http://formspree.io/monkhtc@gmail.com" class="form">
+							<div class="row">
+								<div class="form-group col-lg-6">
+		    						<label for="name">Imię i Nazwisko</label>
+		   							<input type="text" class="form-control" id="name" name="name" placeholder="Imię i Nazwisko">
+		  						</div>
+	  						</div>
+	  						<div class="row">
+		  						<div class="form-group col-lg-6">
+		    						<label for="adresemail">Adres e-mail:</label>
+		   							<input type="email" class="form-control" id="adresemail" name="email" placeholder="Wpisz swój adres e-mail..." required>
+		  						</div>
+	  						</div>
+	  						<div class="row">
+		  						<div class="form-group col-lg-6">
+		    						<label for="text">Twoja wiadomość:</label>
+		   							<textarea type="text" rows="3" class="form-control" id="message" name="message" placeholder="Treść Twojej wiadomości..." required></textarea>
+		  						</div>
+	  						</div>
+	  						<button type="submit" class="btn btn-primary btn-lg send">Wyslij wiadomość</button>
+							
+						</form>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -459,7 +546,7 @@
 							<li><a data-scroll href="#nav">HOME</a></li>
 							<li><a data-scroll href="#">Program UE</a></li>
 							<li><a data-scroll href="#dayplan">Plan dnia</a></li>
-							<li><a data-scroll href="#">Opłaty</a></li>
+							<li><a data-scroll href="#oplaty">Opłaty</a></li>
 							<li><a data-scroll href="#">Pliki do pobrania</a></li>
 						</ul>
 				</div>
