@@ -1,3 +1,7 @@
+* {
+	border: 1px solid red;
+}
+
 body {
 	box-sizing: border-box;
 	margin: 0 auto;
@@ -58,6 +62,11 @@ header {
 	height: 60px;
 }
 
+.center {
+	text-align: center;
+}
+
+
 .navigation{
 	text-align: right;
 }
@@ -96,7 +105,7 @@ header {
 .nav {
 	position: relative;
 	float: right;
-	margin-right: 50px;
+	margin-right: 120px;
 	font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -178,33 +187,33 @@ header {
 }
 
 .mainslogan {
-    display: block;
-    top: 270px;
-    left: 150px;
-    position: absolute;
-    width: 555px;
-    height: 400px;
+    display: inline-block;
+    margin: 146px 0;
+    width: 50%;
+    height: 340px;
+    position: relative;
+
 }
 
-.mainslogan .name {
+.name {
 	width: 100%;
 	font-family: 'Bigelow Rules', sans-serif;
 	height: 175px;
 	text-align: center;
-	font-size: 120px;
+	font-size: 100px;
     color: yellow;
     padding-top: 15px;
     text-shadow: 2px 2px 0px grey;
 }
 
-.mainslogan .division {
+.division {
 	background-image: url('../images/division.png');
 	background-position: center;
-	background-size: cover;
+	background-repeat: no-repeat;
 	height: 50px;
 }
 
-.mainslogan .surname p {
+.surname p {
 	width: 100%;
 	font-family: 'Open Sans', sans-serif;
 	height: 25px;
@@ -316,12 +325,12 @@ header {
 	font-weight: bold;
 }
 
-.columns .quote p.name {
+.columns .quote p.names {
 	text-align: right;
     padding-top: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open sans', sans-serif;
     color: inherit;
-    font-size: 20px;
+    font-size: 18px;
     font-style: italic;
     letter-spacing: 1px;
 }
@@ -369,7 +378,7 @@ header {
 }
 
 .plany{
-	display: inline-block;
+	display: block;
 	margin: 0 auto;
 }
 .plans {
@@ -380,7 +389,7 @@ header {
 	margin: 20px;
 }
 
-.plandnia p{
+.plandnia p {
 	text-align: center;
 	margin: 10px 0;
 }
@@ -394,10 +403,18 @@ header {
 	height: 650px;
 }
 
+.przyciski {
+	display: inline-block;
+}
+
 .dayplan-btns {
 	display: inline-block;
 	text-align: center;
 	padding-top: 25px;
+}
+
+.dayplan-btns p {
+	font-size: 16px;
 }
 
 .btn {
@@ -420,6 +437,8 @@ header {
     transition: .4s;
     letter-spacing: 1px;
     outline: none;
+    height: 50px;
+    width: 220px;
 }
 
 .btn-primary:active:focus, .btn-primary:active:hover {
@@ -544,29 +563,14 @@ table .hour{
 /*Cennik i zasady pobytu*/
 
 
-.title h5{
-	text-align: center;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	font-size: 19px;
+.klasyk {
+	width: 580px;
 }
+.time {
 
-.title p{
-	font-size: 12px;
-	text-align: center;
 }
+.price {
 
-.time{
-	text-align: center;
-	padding-left: 20px;
-}
-
-.price{
-	padding-left: 20px;
-}
-
-.borderleft {
-	border-right: 2px solid #97a2b4;
 }
 
 /*formularz kontaktowy*/
@@ -577,7 +581,7 @@ table .hour{
 
 form {
 	margin: 0 auto;
-	width: 70%;
+	width: 50%;
 
 }
 
@@ -698,6 +702,195 @@ footer h4 {
 	transition: .3s;
 }
 
+
+/*FOR MOBILE*/
+
+@media(max-width: 480px) {
+
+
+.row {
+	margin: 0;
+}
+
+h1 {
+font-size: 1.8em;
+}
+
+p {
+font-size: 1em;
+}
+
+section {
+	margin: 0;
+}
+/*LOGO*/	
+
+.logo {
+	display: none;
+}
+
+.nav {
+	float: none;
+	margin-right: 0;
+}
+
+.nav li a {
+	text-align: center;
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+   border-bottom: none;
+   color: white;
+}
+
+.nav li a:hover {
+	background-color: transparent;
+	border-bottom: none;
+	color: white;
+	text-shadow: none;
+}
+
+.nav li a:focus {
+	
+	
+	border-bottom: none;
+	color: white;
+	text-shadow: none;
+}
+
+
+.nav .dropdown {
+	display: block;
+	width:100%;
+}
+
+.dropdown-toggle {
+	te
+}
+
+.nav .dropdown-menu {
+	width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    min-width: 150px;
+    padding: 5px 0;
+    margin: 6px 0;
+    font-size: 13px;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0;
+    box-shadow: none;
+}
+.nav .dropdown-menu li a {
+    color: #3c3c3c;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    line-height: 35px;
+    text-align: center;
+}
+
+.nav .dropdown-menu li > a:hover, .nav .dropdown-menu li > a:focus {
+	height: inherit;
+    background-color: rgba(155, 207, 210, 0.25);
+    border: none;
+    transition: .3s;
+    text-shadow: none;
+}
+
+/*jumbotron*/
+
+.jumbotron {
+    background-image: url(../images/bg_plusz_mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.mainslogan {
+    display: inline-block;
+    margin: 10px auto;
+    width: 100%;
+    height: 170px;
+    position: relative;
+    top: 55px;
+
+}
+
+.name {
+    width: 100%;
+    height: auto;
+    font-size: 4.5em;
+    padding-top: 0px;
+}
+
+.division {
+	background-image: url('../images/division.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 50px;
+}
+
+.surname {
+margin: 20px 0;
+}
+
+.surname p {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    height: inherit;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.4em;
+    color: white;
+    padding-top: 0;
+    text-shadow: 1px 1px 1px grey;
+    margin: 0;
+}
+
+.division {
+	background-image: none;
+	height: 1px;
+	background-color: white;
+	width: 200px;
+	margin: 0 auto;
+}
+
+.scroll {
+	display: none;
+}
+
+.columns {
+	display: none;
+}
+
+
+/*plan dnia */
+.dayplan-btns p {
+	font-size: 16px;
+}
+
+.btn-primary {
+	height: 50px;
+    width: 220px;
+}
+
+/*KADRA*/
+
+.ih-item.circle {
+    display: inline-block;
+    margin: 0 30px;
+    cursor: default;
+    margin: 20px 0;
+}
+
+/*Cennik*/
+
+
 @media screen and (min-width: 768px) {
 
 .jumbotron {
@@ -705,7 +898,7 @@ footer h4 {
     padding-bottom: 48px;
 }
 
-
+}
 
 
 
